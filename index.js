@@ -59,7 +59,7 @@ const opts = {
                             const p1 = game_queue.shift();
                             const p2 = game_queue.shift();
                             const p3 = game_queue.shift();
-                            client.say(channel,  +p1.username + ', '+ p2.username + ', ' + p3.username + ', it\'s your turn to play!!!');
+                            client.say(channel, p1.username + ', '+ p2.username + ', ' + p3.username + ', it\'s your turn to play!!!');
                         }
                         else if (commandName === "!player"){
                             if (game_queue.length < 1){
