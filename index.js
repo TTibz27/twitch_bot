@@ -86,6 +86,9 @@ const opts = {
                                 outstr = outstr + (i+1) +":[" + user.username +"]  ";
                             }
                             client.say(channel,  outstr);
+                            if (outstr === ''){
+                                client.say(channel,  'Queue is empty...');
+                            }
                         }
                     }
 
